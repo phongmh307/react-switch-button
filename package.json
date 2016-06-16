@@ -5,6 +5,7 @@
   "main": "dist/react-switch-button.min.js",
   "scripts": {
     "build": "npm run build:jsx && npm run build:cp && npm run example && npm run example:jsx && npm run less:minify",
+    "build:core": "npm run build:jsx && npm run build:cp && npm run less:minify",
     "build:jsx": "./node_modules/.bin/babel --presets ../node_modules/babel-preset-react src --out-dir dist",
     "less:minify": "./node_modules/.bin/lessc -x ./src/react-switch-button.less ./dist/react-switch-button.min.css",
     "build:cp": "./node_modules/.bin/uglifyjs ./dist/react-switch-button.js -o ./dist/react-switch-button.min.js",
